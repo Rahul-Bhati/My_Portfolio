@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Portfolio</title>
+      <!-- Bootstrap Style -->
+     <link rel="stylesheet" href="bootstrap5.0.1/css/bootstrap.min.css" />
+     <!-- Bootstrap js  -->
+     <script src="bootstrap5.0.1/js/bootstrap.min.js"></script>
+     <!-- Connecting Css -->
+     <link rel="stylesheet" href="w3.css" />
+     <!-- Fontawesome Style  -->
+     <link rel="stylesheet" href="fontawesome5.15.3/css/all.min.css" />
+     <!-- Jquery js  -->
+     <script src="jquery.min.js"></script>
+     <style>
+          *{
+               margin: 0;
+          }
+          .navbar{
+               padding: 15px 7%;
+          }
+          .navbar .menu a{
+               font-size: 18px;
+               font-weight: 500;
+               color: #0E2431;
+               padding: 6px 0;
+               transition: all 0.4s ease;
+          }
+          .navbar .menu a:hover{
+               color: #2f4da1;
+          }
+          .intro{
+               padding: 15px 15px;
+               background-color: #e3f2fd;
+               font-family: 'Ubuntu', sans-serif;
+          }
+          .container {
+               height: 500px;
+               display: flex;
+               
+          }
+          .container .item{
+               padding-top: 10%;
+          }
+          .container .myimg{
+               padding: 8% 5% 10% 0;
+               display: flex;
+               justify-content: space-between;
+          }
+          .container img {
+               border: 1px solid #ddd;
+               border-radius: 4px;
+               width: 230px;
+               height: 300px;
+               justify-content: center;
+          }
+          .about{
+               padding: 15px 10%;
+
+               font-family: 'Ubuntu', sans-serif;
+          }
+          .skill{
+               padding: 0 10%;
+               background-color: #e3f2fd;
+               font-family: 'Ubuntu', sans-serif;
+          }
+          .skill .w3-card-2{
+               background-color: #e8f5fb;
+          }
+          .project{
+               padding: 0 10%;
+               font-family: 'Ubuntu', sans-serif;
+          }
+          .project .w3-card{
+               padding: 15px 0;
+          }
+          .media-icons a{
+               font-size: 25px;
+               margin: 0 6px;
+          }
+          .contact{
+               padding: 0 10%;
+               background-color: #e3f2fd;
+               font-family: 'Ubuntu', sans-serif;
+          }
+     </style>
+</head>
+<body>
+     <!-- Navigation Menu Start -->
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+          <div class="container-fluid">
+          <a class="navbar-brand" style="color: #4070f4;font-family:'Courier New', Courier, monospace;font-size: 40px;" href="#"><b>Portfolio</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="menu collapse navbar-collapse justify-content-center" style="align-items: center;" id="navbarNavAltMarkup">
+               <div class="navbar-nav">
+               <a class="nav-link active" aria-current="page" href="#">Home</a>
+               <a class="nav-link" href="#myskill">Skill</a>
+               <a class="nav-link" href="#myproject">Project</a>
+               <a class="nav-link" href="#about">About</a>
+               <a class="nav-link" href="#contact">Contact</a>
+               </div>
+          </div>
+          </div>
+     </nav>
+     <div class="intro">
+          <div class="container">
+               <div class="item col-sm-6">
+                    <h5>Hello,</h5> <h1 style="font-size: 70px;">I'm Rahul Bhati</h1> 
+                    <p style="font-size: 30px;color: #4774f1;">Full Stack Developer</p>
+                    <p style="font-size: 25px;">From India</p>
+               </div>
+               <div class="col-sm-2"></div>
+               <div class="myimg col-sm-4" >
+                    <img src="my.jpg" style="float: right;" alt="myimage">
+               </div>
+          </div>
+     </div><br>
+     <div class="about" id="about">
+          <div class="col-sm-12">
+               <div class="row">
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-1"><h3><center style="width:150px;border-bottom: 3px solid #4774f1;">About me</center></h3></div>
+                    <div class="col-sm-5"></div>
+               </div><br>
+               <div class="row">
+                    <div class="col-sm-5">
+                         <img src="about-us.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                         <div class="container-fluid" style="padding-top: 10%;">
+                              <h3 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:#4774f1;">Let Me Introduce Myself</h3><br>
+                              <p style="font-size:20px;">
+                                   Hello , I am Rahul Bhati 
+                                   Having Knowledge about Computer hardware & Networking in IT Sector. Also have knowledge of C, C++, PHP, JQUERY, DSA, JAVA, HTML, CSS and JAVASCRIPT.<br><br>
+                                   I will be looking forward to develop my skills by learning more about this domain or related to it as i had always interested in this.<br><br>
+                                   Here my cv <br><br>
+                              </p>
+                              <button class="btn btn-primary"><a href="Resume.pdf" style="font-size: 22px;color: #fff;text-decoration:none;">Download CV</a></button>
+                         </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+               </div>
+          </div>
+     </div><br>
+     <div class="skill" id="myskill">
+          <br><br>
+          <div class="col-sm-12">
+               <div class="row">
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-1"><h3><center style="width:150px;border-bottom: 3px solid #4774f1;">My skills</center></h3></div>
+                    <div class="col-sm-5"></div>
+               </div><br>
+               <div class="row">
+                    <div class="col-sm-2" style="margin-bottom: 15px;">
+                         <div class="w3-card-2">
+                              <div class="card-body">
+                                   <img src="skills/1.png" style="width:200px;height:150px;" class="img-fluid"><br><br>
+                                   <h4><center>C Language</center></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-2">
+                         <div class="w3-card-2">
+                              <div class="card-body">
+                                   <img src="skills/2.png" style="width:200px;height:150px;" class="img-fluid"><br><br>
+                                   <h4><center>C++ </center></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-2">
+                         <div class="w3-card-2">
+                              <div class="card-body">
+                                   <img src="skills/3.png" style="width:200px;height:150px;" class="img-fluid"><br><br>
+                                   <h4><center>HTML & CSS</center></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-2">
+                         <div class="w3-card-2">
+                              <div class="card-body">
+                                   <img src="skills/4.png" style="width:200px;height:150px;" class="img-fluid"><br><br>
+                                   <h4><center>PHP</center></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-2">
+                         <div class="w3-card-2">
+                              <div class="card-body">
+                                   <img src="skills/1.png" style="width:200px;height:150px;" class="img-fluid"><br><br>
+                                   <h4><center>JQUERY</center></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-2">
+                         <div class="w3-card-2">
+                              <div class="card-body">
+                                   <img src="skills/1.png" style="width:200px;height:150px;" class="img-fluid"><br><br>
+                                   <h4><center>JAVASCRIPT</center></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-2">
+                         <div class="w3-card-2">
+                              <div class="card-body">
+                                   <img src="skills/1.png" style="width:200px;height:150px;" class="img-fluid"><br><br>
+                                   <h4><center>DSA</center></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-2">
+                         <div class="w3-card-2">
+                              <div class="card-body">
+                                   <img src="skills/1.png" style="width:200px;height:150px;" class="img-fluid"><br><br>
+                                   <h4><center>JAVA</center></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-2">
+                         <div class="w3-card-2">
+                              <div class="card-body">
+                                   <img src="skills/1.png" style="width:200px;height:150px;" class="img-fluid"><br><br>
+                                   <h4><center>JSP</center></h4>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-2">
+                         <div class="w3-card-2">
+                              <div class="card-body">
+                                   <img src="skills/1.png" style="width:200px;height:150px;" class="img-fluid"><br><br>
+                                   <h4><center>SERVLET</center></h4>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <br>
+          </div>
+
+     </div>
+     <div class="project" id="myproject">
+          <br><br>
+          <div class="col-sm-12">
+               <div class="row">
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-1"><h3><center style="width:150px;border-bottom: 3px solid #4774f1;">My Projects</center></h3></div>
+                    <div class="col-sm-5"></div>
+               </div><br>
+               <div class="row">
+                    <div class="col-sm-3" style="margin-bottom: 15px;">
+                         <div class="w3-card" style="height: 10rem;">
+                              <div class="card-body">
+                                   <center><i class="fab fa-android"></i></center>
+                                   <a style="text-decoration: none;" href="https://github.com/Rahul-Bhati/Wedding_Website.git">
+                                        <center><h4>Matrimonial Websit</h4>
+                                             <p>Nov 2021-Dec 2021</p>
+                                        </center>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-3" style="margin-bottom: 15px;">
+                         <div class="w3-card" style="height: 10rem;">
+                              <div class="card-body">
+                                   <center><i class="fab fa-android"></i></center>
+                                   <a style="text-decoration: none;" href="https://github.com/Rahul-Bhati/Music_Website.git">
+                                        <center><h4>Music Website</h4>
+                                             <p>Oct 2021-Nov 2021</p>
+                                        </center>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-3" style="margin-bottom: 15px;">
+                         <div class="w3-card" style="height: 10rem;">
+                              <div class="card-body">
+                                   <center><i class="fab fa-android"></i></center>
+                                   <a style="text-decoration: none;" href="https://github.com/Rahul-Bhati/Training-Placement_Cell.git">
+                                        <center><h4>Training & Placement Cell</h4>
+                                             <p>Sep 2021-Oct 2021</p>
+                                        </center>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-3" style="margin-bottom: 15px;">
+                         <div class="w3-card" style="height: 10rem;">
+                              <div class="card-body">
+                                   <center><i class="fab fa-android"></i></center>
+                                   <a style="text-decoration: none;" href="https://github.com/Rahul-Bhati/Helicopter_Game.git">
+                                        <center><h4>Helicopter Game</h4>
+                                             <p>July 2021-July 2021</p>
+                                        </center>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-3" style="margin-bottom: 15px;">
+                         <div class="w3-card" style="height: 10rem;">
+                              <div class="card-body">
+                                   <center><i class="fab fa-android"></i></center>
+                                   <a style="text-decoration: none;" href="https://github.com/Rahul-Bhati/My_Video_Player.git">
+                                        <center><h4>My Video Player</h4>
+                                             <p>Jan 2022-Feb 2022</p>
+                                        </center>
+                                   </a>
+                              </div>
+                         </div>
+                    </div> 
+                    <div class="col-sm-3" style="margin-bottom: 15px;">
+                         <div class="w3-card" style="height: 10rem;">
+                              <div class="card-body">
+                                   <center><i class="fab fa-android"></i></center>
+                                   <a style="text-decoration: none;" href="https://github.com/Rahul-Bhati/mp3_music_jsp.git">
+                                        <center><h4>Mp3 Music JSP</h4>
+                                             <p>Mar 2021-Apr 2022</p>
+                                        </center>
+                                   </a>
+                              </div>
+                         </div>
+                    </div> 
+                    <div class="col-sm-3" style="margin-bottom: 15px;">
+                         <div class="w3-card" style="height: 10rem;">
+                              <div class="card-body">
+                                   <center><i class="fab fa-android"></i></center>
+                                   <a style="text-decoration: none;" href="https://github.com/Rahul-Bhati/StackOverflow_Q-A_Website.git">
+                                        <center><h4>StackOverflow_Q-A_Website</h4>
+                                             <p>Apr 2022-May 2022</p>
+                                        </center>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>     
+               </div>
+          </div>
+          
+     </div><br>
+     <div class="contact" id="#contact">
+          <br><br>
+          <div class="col-sm-12">
+               <div class="row">
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-1"><h3><center style="width:150px;border-bottom: 3px solid #4774f1;">My Contact</center></h3></div>
+                    <div class="col-sm-5"></div>
+               </div><br>
+               <div class="row">
+                    <div class="media-icons col-sm-2">
+                         <h4 style="padding:5px;color: #6181da;border-bottom: 3px solid #fff;">Social Media Links</h4><br>
+                         <a href="#"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#"><i class="fab fa-twitter"></i></a>
+                         <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div> 
+                    <div class="col-sm-3"></div>
+                    <div class="media-icons col-sm-2">
+                         <h4 style="padding:5px;color: #6181da;border-bottom: 3px solid #fff;">Email</h4><br>
+                         <i style="font-size: 25px;" class="fas fa-envelope">&nbsp;&nbsp;<span style="font-size: 20px;justify-content:center;">rb083380@gmail.com</span></i>
+                    </div>
+                    <div class="col-sm-3"></div>
+                    <div class="media-icons col-sm-2">
+                         <h4 style="padding:5px;color: #6181da;border-bottom: 3px solid #fff;">Other Links</h4><br>
+                         <a href="http://www.linkedin.com/in/rahul-bhati-25482a1a0"><i class="fab fa-linkedin"></i></a>
+                         <a href="https://github.com/Rahul-Bhati"><i class="fab fa-github"></i></a>
+                    </div> 
+               </div>
+          </div>
+          <br><br>
+     </div>
+     <footer>
+          <div class="col-sm-12" style="background-color: #6181da;padding: 10px;color: white;">
+               <center>credted by Rahul-Bhati | © 2022 All Rights Reserved</center>
+          </div>
+     </footer>
+</body>
+</html>
